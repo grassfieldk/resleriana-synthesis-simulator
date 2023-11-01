@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import Image from 'next/image';
 import { characters } from '../../resource/characters';
 import { colors } from '../../resource/colors';
+import { traits } from '../../resource/traits';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -56,9 +57,13 @@ export default function Home() {
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-ghost badge-sm bg-neutral p-2 text-white">{character.trait1}</span>
-                    <br />
-                    <span className="badge badge-ghost badge-sm bg-neutral p-2 text-white">{character.trait2}</span>
+                    {character.traits.map((trait) => (
+                      <div key={trait}>
+                        <div className="tooltip tooltip-left" data-tip={traits.find((t) => t.name === trait)?.effect}>
+                          <span className="badge badge-ghost badge-sm bg-neutral p-2 text-white">{trait}</span>
+                        </div>
+                      </div>
+                    ))}
                   </td>
                   <td>
                     {colors[character.colorIn]}▶{colors[character.colorOut]}
