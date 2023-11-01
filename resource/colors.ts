@@ -1,7 +1,7 @@
-export const colors = {
-  r: '赤',
-  g: '緑',
-  b: '青',
-  y: '黄',
-  p: '紫'
-};
+export const colors = [
+  { id: 'r', name: '赤' },
+  { id: 'g', name: '緑' },
+  { id: 'b', name: '青' },
+  { id: 'y', name: '黄' },
+  { id: 'p', name: '紫' }
+];

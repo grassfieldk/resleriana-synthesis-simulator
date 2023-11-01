@@ -66,7 +66,7 @@ export default function Home() {
                     ))}
                   </td>
                   <td>
-                    {colors[character.colorIn]}▶{colors[character.colorOut]}
+                    {colors.find((c) => c.id === character.colorIn)?.name}▶{colors.find((c) => c.id === character.colorOut)?.name}
                   </td>
                 </tr>
               ))}
