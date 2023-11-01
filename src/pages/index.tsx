@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
     <main className={`flex flex-col min-h-screen md:p-12 ${inter.className}`}>
-      <h1 className="text-white text-xl font-semibold mb-8">レスレリアーナのアトリエ 調合シミュレータ</h1>
+      <h1 className="text-xl font-semibold mb-8">レスレリアーナのアトリエ 調合シミュレータ</h1>
       {/* 調合エリア */}
       <div className="container mx-auto mb-4"></div>
       {/* キャラクター一覧 */}
