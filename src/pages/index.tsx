@@ -15,7 +15,7 @@ export default function Home() {
       {/* キャラクター一覧 */}
       <div className="container mx-auto mb-4">
         {characters.map((character) => (
-          <p key={character.code} className="text-white">
+          <p key={character.id} className="text-white">
             {character.name}
           </p>
         ))}
@@ -35,7 +35,7 @@ export default function Home() {
             </thead>
             <tbody>
               {characters.map((character) => (
-                <tr key={character.code}>
+                <tr key={character.id}>
                   <th>
                     <label>
                       <input type="checkbox" className="checkbox" />

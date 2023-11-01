@@ -1,6 +1,15 @@
-export const characters = [
+export type Character = {
+  id: string;
+  name: string;
+  title: string;
+  traits: string[];
+  colorIn: string;
+  colorOut: string;
+};
+
+export const characters: Character[] = [
   {
-    code: 'resna_1',
+    id: 'resna_1',
     name: 'レスナ',
     title: '未来に夢を求めし者',
     traits: ['会心の出来', '雷の呪詛'],

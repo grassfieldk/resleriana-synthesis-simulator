@@ -1,4 +1,9 @@
-export const traits = [
+export type Trait = {
+  name: string;
+  effect: string;
+};
+
+export const traits: Trait[] = [
   { name: '剛力の祝福', effect: '物理攻撃のダメージ3～30%アップ' },
   { name: '斬の祝福', effect: '斬属性のダメージ5～45%アップ' },
   { name: '打の祝福', effect: '打属性のダメージ5～45%アップ' },
