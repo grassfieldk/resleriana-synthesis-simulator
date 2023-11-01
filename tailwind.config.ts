@@ -14,11 +14,11 @@ const config: Config = {
   daisyui: {
     themes: [
       {
-        mytheme: {
+        resleri: {
           primary: '#232a3b',
           secondary: '#445675',
           accent: '#a99d69',
-          neutral: '#2b3440',
+          neutral: '#5b6782',
           'base-100': '#ffffff',
           info: '#d22b62',
           success: '#36d399',

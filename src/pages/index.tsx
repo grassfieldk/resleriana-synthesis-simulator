@@ -1,11 +1,76 @@
 import { Inter } from 'next/font/google';
+import Image from 'next/image';
+import { characters } from '../../resource/characters';
+import { colors } from '../../resource/colors';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
-    <main className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}>
-      <h1 className='text-white'>It works!</h1>
+    <main className={`flex flex-col min-h-screen md:p-12 ${inter.className}`}>
+      <h1 className="text-white text-xl font-semibold mb-8">レスレリアーナのアトリエ 調合シミュレータ</h1>
+      {/* 調合エリア */}
+      <div className="container mx-auto mb-4"></div>
+      {/* キャラクター一覧 */}
+      <div className="container mx-auto mb-4">
+        {characters.map((character) => (
+          <p key={character.code} className="text-white">
+            {character.name}
+          </p>
+        ))}
+        <div className="overflow-x-auto">
+          <table className="table">
+            <thead>
+              <tr>
+                <th>
+                  <label>
+                    <input type="checkbox" className="checkbox" />
+                  </label>
+                </th>
+                <th>キャラクター</th>
+                <th>特性</th>
+                <th>ギフトカラー</th>
+              </tr>
+            </thead>
+            <tbody>
+              {characters.map((character) => (
+                <tr key={character.code}>
+                  <th>
+                    <label>
+                      <input type="checkbox" className="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div className="flex items-center space-x-3">
+                      <div className="avatar">
+                        <div className="mask mask-squircle p-2 md:p-1 bg-gradient-to-r from-red-500 from-45% via-white to-yellow-500 to-55%">
+                          <div className="mask mask-squircle w-12 h-12">
+                            <Image src="/48x48.png" alt="" width={48} height={48} />
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div className="font-bold text-primary">{character.name}</div>
+                        <div className="text-xs text-secondary opacity-80">{character.title}</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span className="badge badge-ghost badge-sm bg-neutral p-2 text-white">{character.trait1}</span>
+                    <br />
+                    <span className="badge badge-ghost badge-sm bg-neutral p-2 text-white">{character.trait2}</span>
+                  </td>
+                  <td>
+                    {colors[character.colorIn]}▶{colors[character.colorOut]}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      {/* 素材一覧 */}
+      <div className="container mx-auto mb-4"></div>
     </main>
   );
 }
