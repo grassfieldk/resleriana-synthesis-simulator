@@ -1,7 +1,6 @@
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
 import { characters } from '../../resource/characters';
-import { colors } from '../../resource/colors';
 import { traits } from '../../resource/traits';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -14,33 +13,17 @@ export default function Home() {
       <div className="container mx-auto mb-4"></div>
       {/* キャラクター一覧 */}
       <div className="container mx-auto mb-4">
-        {characters.map((character) => (
-          <p key={character.id} className="text-white">
-            {character.name}
-          </p>
-        ))}
         <div className="overflow-x-auto">
           <table className="table">
             <thead>
               <tr>
-                <th>
-                  <label>
-                    <input type="checkbox" className="checkbox" />
-                  </label>
-                </th>
                 <th>キャラクター</th>
                 <th>特性</th>
-                <th>ギフトカラー</th>
               </tr>
             </thead>
             <tbody>
               {characters.map((character) => (
                 <tr key={character.id}>
-                  <th>
-                    <label>
-                      <input type="checkbox" className="checkbox" />
-                    </label>
-                  </th>
                   <td>
                     <div className="flex items-center space-x-3">
                       <div className="avatar">
@@ -64,9 +47,6 @@ export default function Home() {
                         </div>
                       </div>
                     ))}
-                  </td>
-                  <td>
-                    {colors.find((c) => c.id === character.colorIn)?.name}▶{colors.find((c) => c.id === character.colorOut)?.name}
                   </td>
                 </tr>
               ))}
