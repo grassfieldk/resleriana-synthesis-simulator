@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
-    <main className={`flex flex-col min-h-screen md:p-12 ${inter.className}`}>
+    <main className={`flex flex-col min-h-screen p-2 md:p-12 ${inter.className}`}>
       <h1 className="text-xl font-semibold mb-8">レスレリアーナのアトリエ 調合シミュレータ</h1>
       {/* 調合エリア */}
       <div className="container mx-auto mb-4"></div>
@@ -27,9 +27,9 @@ export default function Home() {
                   <td>
                     <div className="flex items-center space-x-3">
                       <div className="avatar">
-                        <div className="mask mask-squircle p-2 md:p-1 bg-gradient-to-r from-red-500 from-45% via-white to-yellow-500 to-55%">
-                          <div className="mask mask-squircle w-12 h-12">
-                            <Image src="/48x48.png" alt="" width={48} height={48} />
+                        <div className="flex-none mask mask-squircle bg-gradient-to-r from-red-500 from-45% via-white to-yellow-500 to-55%" style={{padding: 2}}>
+                          <div className="flex-none mask mask-squircle w-12 h-12">
+                            <Image src="/48x48.png" alt="" layout="fill" objectFit="cover" />
                           </div>
                         </div>
                       </div>
