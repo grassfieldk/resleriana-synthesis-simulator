@@ -24,8 +24,8 @@ export default function Home() {
             </thead>
             <tbody>
               {characters.map((character) => {
-                let colorFrom = colors.find((c) => c.id === character.colorIn)?.colorName
-                let colorTo = colors.find((c) => c.id === character.colorOut)?.colorName
+                let colorFrom = colors.find((c) => c.id === character.colorIn)?.colorName;
+                let colorTo = colors.find((c) => c.id === character.colorOut)?.colorName;
 
                 return (
                   <tr key={character.id}>

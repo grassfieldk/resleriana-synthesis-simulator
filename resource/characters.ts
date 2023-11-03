@@ -49,5 +49,5 @@ export const characters: Character[] = [
   { id: '37', rarity: 1, order: 0, name: 'テス', title: '兎耳トラブルメーカー', traits: ['突の盾', '大きな回復量', '単体回復量上昇'], colorIn: 'r', colorOut: 'y' },
   { id: '38', rarity: 1, order: 0, name: 'マリオン', title: '開発班の班長', traits: ['物防の祝福', '火の祝福', '雷耐性上昇'], colorIn: 'p', colorOut: 'r' },
   { id: '39', rarity: 1, order: 0, name: 'リンカ', title: '班長補佐', traits: ['火の祝福', '物防の祝福', '魔法耐性上昇'], colorIn: 'g', colorOut: 'y' },
-  { id: '40', rarity: 1, order: 0, name: 'クーデリア', title: '貴族令嬢', traits: ['打の呪詛', '氷の盾', '与ダメージ上昇'], colorIn: 'p', colorOut: 'r' },
+  { id: '40', rarity: 1, order: 0, name: 'クーデリア', title: '貴族令嬢', traits: ['打の呪詛', '氷の盾', '与ダメージ上昇'], colorIn: 'p', colorOut: 'r' }
 ];
