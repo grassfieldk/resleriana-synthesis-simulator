@@ -7,6 +7,13 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
+      },
+      colors: {
+        'gift-red': '#d3514d',
+        'gift-green': '#55ad77',
+        'gift-blue': '#518ec5',
+        'gift-yellow': '#e7e28b',
+        'gift-purple': '#b84bd9'
       }
     }
   },
