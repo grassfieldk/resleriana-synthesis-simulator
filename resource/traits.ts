@@ -1,7 +1,4 @@
-export type Trait = {
-  name: string;
-  effect: string;
-};
+import { Trait } from '@/types/Trait';
 
 export const traits: Trait[] = [
   { name: '剛力の祝福', effect: '物理攻撃のダメージ3～30%アップ' },

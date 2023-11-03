@@ -1,11 +1,6 @@
-export type Color = {
-  id: string;
-  name: string;
-  colorName: string;
-  displayName: string;
-};
+import { GiftColor } from '@/types/GiftColor';
 
-export const colors: Color[] = [
+export const colors: GiftColor[] = [
   { id: 'r', name: 'red', colorName: 'gift-red', displayName: '赤' },
   { id: 'g', name: 'green', colorName: 'gift-green', displayName: '緑' },
   { id: 'b', name: 'blue', colorName: 'gift-blue', displayName: '青' },
