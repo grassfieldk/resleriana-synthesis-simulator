@@ -28,7 +28,7 @@ export const characters: Character[] = [
   { id: '25', rarity: 2, order: 0, name: 'レスナ', title: '未来に夢を求めし者', traits: ['魔力の祝福', '単体回復ボーナス', '魔法ダメージ上昇'], giftColorIn: 'y', giftColorOut: 'g' },
   { id: '26', rarity: 2, order: 0, name: 'レント', title: '剛腕戦士', traits: ['打の盾', '雷の祝福', '物理耐性上昇'], giftColorIn: 'g', giftColorOut: 'p' },
   { id: '27', rarity: 2, order: 0, name: 'モニカ', title: 'モニカオンステージ', traits: ['突の祝福', '物防の祝福', '魔法耐性上昇【D】'], giftColorIn: 'r', giftColorOut: 'b' },
-  { id: '28', rarity: 2, order: 0, name: 'シャリステラ', title: '族長の娘', traits: ['守護の祝福', '魔力の呪詛', '魔法ブレイクダメージ上昇'], giftColorIn: 'n', giftColorOut: 'y' },
+  { id: '28', rarity: 2, order: 0, name: 'シャリステラ', title: '族長の娘', traits: ['守護の祝福', '魔力の呪詛', '魔法ブレイクダメージ上昇'], giftColorIn: 'b', giftColorOut: 'y' },
   { id: '29', rarity: 2, order: 0, name: 'エスカ', title: 'エンドレスタルト', traits: ['斬の盾', '打の祝福', '打耐性上昇'], giftColorIn: 'p', giftColorOut: 'b' },
   { id: '30', rarity: 2, order: 0, name: 'メルル', title: 'Damsel in Distress', traits: ['氷の呪詛', '守護の祝福', '単体攻撃威力上昇'], giftColorIn: 'g', giftColorOut: 'r' },
   { id: '31', rarity: 2, order: 0, name: 'トトリ', title: '強き母に憧れる少女', traits: ['大きな回復量', '魔防の祝福', '回復量上昇'], giftColorIn: 'p', giftColorOut: 'g' },
